@@ -1,0 +1,31 @@
+body,div,ul,li{margin:0;padding: 0;}
+
+ul li{list-style: none;border-left: 1px solid silver;border-bottom: 1px solid silver;border-right: 1px solid silver;height: 30px;line-height: 30px;padding-left: 5px;}
+div#rightMenu{display: none;position: absolute;}
+div#rightMenu ul{display: none;}
+div#rightMenu{position: absolute;}
+div#rightMenu>ul>li{width: 89px;}
+li.sub ul{position: absolute;}
+div#rightMenu ul li:hover{background: pink;}
+li.sub::after{content: "";float: right;width: 0;height: 0;border-left: 6px solid silver;border-top: 8px solid transparent;border-bottom: 8px solid transparent;margin-top: 7px;margin-right: 2px;}
+div#rightMenu>ul>li{position: relative;}
+div#rightMenu>ul>li>ul{position: absolute;left: 95px;}
+div#rightMenu>ul>li:first-child{border-top: 1px solid silver;}
+/*第三课样式*/
+li#li3>ul{top: 0;}
+li#li3>ul>li{width: 360px;}
+li#li3>ul>li:first-child{border-top: 1px solid silver;}
+li#li3>ul>li>ul{position: absolute;left: 366px;width: 200px;}
+li#li3>ul>li>ul>li{width: 160px;}
+li#li3>ul>li>ul>li:first-child{border-top: 1px solid silver;}
+li#li3>ul>li:first-child ul{top: 0px;}
+li#li3>ul>li:first-child+li+li+li ul{top: 92px;}
+li#li3>ul>li:first-child+li+li+li+li+li+li ul{top: 185px;}
+/*第二课*/
+li#li2>ul>li{width: 150px;}
+li#li2>ul>li:first-child{border-top: 1px solid silver;}
+li#li2>ul{top: 0px;}
+/*第一课*/
+li#li1>ul{top: 0;}
+li#li1>ul>li{width: 150px;}
+li#li1>ul>li:first-child{border-top: 1px solid silver;}
